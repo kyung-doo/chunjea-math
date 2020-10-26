@@ -16,10 +16,12 @@
         setTimeout(function (){
             $("#game-content").show();
         });
+
+        $(".restart-btn").on(click, function () {
+            alert("홈 이동 학년 : "+$.getUrlVar("grade")+", 학기 : "+$.getUrlVar("term")+", 단원 : "+$.getUrlVar("lesson"));
+        });
     });
 
-    $(".restart-btn").on(click, function () {
-        alert("홈 이동 학년 : "+$("body").data("grade")+", 학기 : "+$("body").data("term")+", 단원 : "+$("body").data("lesson"));
-    });
+    
 
 })( jQuery );
