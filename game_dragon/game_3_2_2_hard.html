@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+		<!-- 공통 css -->
+		<link type="text/css" rel="stylesheet" href="../common/css/common.css"></link>
+		<link type="text/css" rel="stylesheet" href="../common/css/game.css"></link>
+
+		<!-- 개별 css -->
+		<link type="text/css" rel="stylesheet" href="./css/content.css"></link>
+
+		<!-- 공통 js -->
+		<script type="text/javascript" src="../common/js/createjs.min.js"></script>
+		<script type="text/javascript" src="../common/js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="../common/js/jquery.counterup.min.js"></script>
+        <script type="text/javascript" src="../common/js/gsap.min.js"></script>
+        <script type="text/javascript" src="../common/js/common.js"></script>
+		<script type="text/javascript" src="../common/js/game.js"></script>
+		<script type="text/javascript" src="../common/js/animate.init.js"></script>
+
+		<!-- 개별 js -->
+		<script type="text/javascript" src="./animatecc/animate.js"></script>
+		<script type="text/javascript" src="./js/content.js"></script>
+	</head>
+
+
+	<!-- 
+		data-grade=학년
+		data-term=학기
+		data-lesson=단원
+	 -->
+	<body onselectstart="return false" ondragstart="return false" data-grade="3" data-term="2" data-lesson="2">
+		<!-- wrap -->
+		<div id="wrap">
+			<!-- container -->
+			<div id="container">
+				<!-- game-content -->
+				<div id="game-content">
+
+
+					<!-- animation_container -->
+					<div id="animation_container" style="background-color:transparent; width:1280px; height:720px">
+						<canvas id="canvas" width="1280" height="720" style="position: absolute; display: block; background-color:transparent;"></canvas>
+						<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1280px; height:720px; position: absolute; left: 0px; top: 0px; display: block;">
+						</div>
+					</div>
+					<!-- //animation_container -->
+
+					<!-- forest -->
+					<div class="forest"></div>
+					<!-- //forest -->
+
+
+					<!-- quiz-con -->
+					<div class="quiz-con">
+						<div class="quiz-wrap">
+
+							<!-- quiz ox -->
+							<div class="quiz quiz-ox hidden" data-answer="o">
+								<div class="quest">문제 타이틀</div>
+								<div class="list-con">
+									<div class="list">O</div>
+									<div class="list">X</div>
+								</div>
+							</div>
+							<!-- //quiz ox -->
+
+							<!-- quiz choice -->
+							<div class="quiz quiz-choice hidden" data-answer="2">
+								<div class="quest">문제 타이틀</div>
+								<div class="list-con">
+									<div class="list">정답 1</div>
+									<div class="list">정답 2</div>
+									<div class="list">정답 3</div>
+								</div>
+							</div>
+							<!-- //quiz choice -->
+
+							<!-- quiz input -->
+							<div class="quiz quiz-input hidden" data-answer="정답1|정답2">
+								<div class="quest">문제 타이틀</div>
+								<div class="input-con">
+									<input type="text" placeholder="">
+									<div class="enter-btn">확인</div>
+								</div>
+							</div>
+							<!-- //quiz input -->
+
+						</div>
+					</div>
+					<!-- //quiz-con -->
+					
+
+					<!-- home-btn -->
+					<div class="home-btn"></div>
+					<!-- //home-btn -->
+
+					<!-- life-con -->
+					<div class="life-con">
+						<div class="life"></div>
+						<div class="life"></div>
+						<div class="life"></div>
+					</div>
+					<!-- //life-con -->
+
+				</div>
+				<!-- //game-content -->
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //wrap -->
+	</body>
+</html>
