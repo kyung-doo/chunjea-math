@@ -84,11 +84,22 @@ body {
 	width:100%;
 	overflow:hidden;
 }
+
+#animation_container {
+	position: absolute;
+	left:0;
+	top:0;
+	width: 1280px;
+	height: 720px;
+	pointer-events: none;
+}
+
 #game-content {
 	position:relative;
 	width:1280px;
 	height:720px;
-	overflow:hidden
+	overflow:hidden;
+	display: none;
 }
 
 #game-content .quiz-con {
@@ -140,12 +151,32 @@ body {
 	opacity: 0;
 }
 
-
-#animation_container {
+#game-content  .ending-frame {
 	position: absolute;
-	left:0;
-	top:0;
-	width: 1280px;
-	height: 720px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url('../images/ending_frame.png') no-repeat;
 	pointer-events: none;
+	z-index: 1;
 }
+
+#game-content  .restart-btn {
+    position: absolute;
+    left: 536px;
+    top: 624px;
+    width: 218px;
+    height: 88px;
+    background: url('../images/restart_btn.png') no-repeat;
+    cursor: pointer;
+    z-index: 2;
+    will-change: transform;
+}
+#game-content  .restart-btn:hover,
+#game-content  .restart-btn.down {
+	background-position-y: -88px;
+}
+
+
+

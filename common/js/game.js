@@ -7,13 +7,16 @@ var targetQuiz;
 (function ( $ ) {
     'use strict';
 
-    // 게임 init
+    // init
     $(window).on("init", function (){
-
         startQuiz();
 
         $(".home-btn").on(click, function () {
             alert("홈 이동 학년 : "+$("body").data("grade")+", 학기 : "+$("body").data("term")+", 단원 : "+$("body").data("lesson"));
+        });
+
+        setTimeout(function (){
+            $("#game-content").show();
         });
 
     });
@@ -46,7 +49,7 @@ var targetQuiz;
         $(".quiz-con").removeClass("disable");
         targetQuiz = $(".quiz-con .quiz").eq(quizCount);
         $(".quiz-con .quiz").hide();
-        targetQuiz.show();
+        targetQuiz.fadeIn(500);
 
         if(targetQuiz.is(".quiz-ox")) {
             // ox 형
