@@ -1,0 +1,29 @@
+﻿@charset "utf-8";
+
+
+#game-content {
+    background: url('../images/bg.jpg') no-repeat;
+}
+
+
+/* quiz-ox */
+.quiz-ox .list {
+    cursor: pointer;
+}
+.quiz-ox .list.active {
+    color: #f00;
+}
+
+
+/* quiz-choice */
+.quiz-choice .list {
+    cursor: pointer;
+}
+.quiz-choice .list.active {
+    color: #f00;
+}
+
+/* quiz-input */
+.quiz-input .enter-btn {
+    cursor: pointer;
+}

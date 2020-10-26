@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link type="text/css" rel="stylesheet" href="./css/common.css"></link>
+		<link type="text/css" rel="stylesheet" href="./css/game.css"></link>
+
+		<script type="text/javascript" src="./js/createjs.min.js"></script>
+		<script type="text/javascript" src="./animatecc/animate.js"></script>
+
+		<script type="text/javascript" src="./js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="./js/jquery.counterup.min.js"></script>
+        <script type="text/javascript" src="./js/gsap.min.js"></script>
+
+		<script type="text/javascript" src="./js/animate.init.js"></script>
+        <script type="text/javascript" src="./js/common.js"></script>
+        <script type="text/javascript" src="./js/game.js"></script>
+
+	</head>
+	<body onselectstart="return false" ondragstart="return false">
+		<!-- wrap -->
+		<div id="wrap">
+			<!-- container -->
+			<div id="container">
+				<!-- game-content -->
+				<div id="game-content">
+                    
+                    
+
+					<!-- animation_container -->
+					<div id="animation_container" style="background-color:transparent; width:1280px; height:720px">
+						<canvas id="canvas" width="1280" height="720" style="position: absolute; display: block; background-color:transparent;"></canvas>
+						<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1280px; height:720px; position: absolute; left: 0px; top: 0px; display: block;">
+						</div>
+					</div>
+					<!-- //animation_container -->
+
+				</div>
+				<!-- //game-content -->
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //wrap -->
+	</body>
+</html>

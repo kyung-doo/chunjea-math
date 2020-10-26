@@ -1,0 +1,151 @@
+﻿@charset "utf-8";
+
+/* 헤움고딕 360 */
+@font-face {
+    font-family: 'HU고딕360';
+    src: url( '../fonts/HU고딕360.woff' ) format('woff');
+}
+
+/* 배달의민족 주아 */
+@font-face { 
+	font-family: 'BMJUA'; 
+	src: url('../fonts/BMJUA.woff') format('woff'); 
+}
+
+/* 배달의민족 한나는 11살 */
+@font-face { 
+	font-family: 'BMHANNA_11yrs'; 
+	src: url('../fonts/BMHANNA_11yrs.woff') format('woff'); 
+}
+
+/* 배스킨라빈스 B */
+@font-face { 
+	font-family: 'BRBA_B'; 
+	src: url('../fonts/BRBA_B.woff') format('woff'); 
+}
+
+/* 배스킨라빈스 R */
+@font-face { 
+	font-family: 'BRBA_R'; 
+	src: url('../fonts/BRRA_R.woff') format('woff'); 
+}
+
+
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,button,textarea,p,blockquote,th,td{margin:0;padding:0}
+header,footer,section,article,aside,nav,hgroup,details,menu,figure,figcaption{display:block;border:0;*margin:0;*padding:0}/* html5 */
+table{width:100%;border-collapse:collapse;border-spacing:0}
+
+fieldset,img,iframe{border:0}
+img{vertical-align:top}
+ul,ol{list-style:none}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+caption,legend{display:none}
+a{cursor:pointer;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+a:link,a:visited,a:active,a:hover{color:#333;text-decoration:none}
+input[type="text"]::-ms-clear {display: none;}
+
+.hidden{display: none;}
+.disable{pointer-events: none;}
+
+
+
+/* layout */
+*{
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none
+}
+
+.button {
+	cursor: pointer;
+	transition: transform 0.4s;
+}
+.button:hover {
+	transform: scale(1.05);
+}
+.button.down {
+	transform: scale(1.05);
+}
+
+
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	overflow: hidden;
+}
+#wrap {
+	width:100%;
+	height:100%;
+}
+#container {
+	width:100%;
+	overflow:hidden;
+}
+#game-content {
+	position:relative;
+	width:1280px;
+	height:720px;
+	overflow:hidden
+}
+
+#game-content .quiz-con {
+    position: absolute;
+    left:381px;
+    top: 109px;
+    width: 870px;
+    height: 593px;
+    background: url('../images/quiz_bg.png') no-repeat;
+    z-index: 9;
+}
+
+#game-content  .home-btn {
+    position: absolute;
+    left: 27px;
+    top: 13px;
+    width: 87px;
+    height: 84px;
+	background: url('../images/home_btn.png') no-repeat;
+	cursor: pointer;
+}
+
+#game-content  .life-con {
+    position: absolute;
+    left: 1030px;
+    top: 24px;
+    width: 200px;
+    height: 62px;
+	background: url('../images/life_bg.png') no-repeat;
+}
+#game-content  .life-con .life {
+	position: absolute;
+	top: 7px;
+	width: 52px;
+	height: 45px;
+	background: url('../images/life.png') no-repeat;
+	transition: opacity 0.6s;
+}
+#game-content  .life-con .life:nth-child(1) {
+	left: 6px;
+}
+#game-content  .life-con .life:nth-child(2) {
+	left: 71px;
+}
+#game-content  .life-con .life:nth-child(3) {
+	left: 136px;
+}
+#game-content  .life-con .life.off {
+	opacity: 0;
+}
+
+
+#animation_container {
+	position: absolute;
+	left:0;
+	top:0;
+	width: 1280px;
+	height: 720px;
+	pointer-events: none;
+}
