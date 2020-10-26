@@ -37,9 +37,9 @@
     // 게임 종료
     $(window).on("game-finish", function ( e, state ) {
         if(state == "clear") {
-            location.href = "../ending_cat/clear.html?grade="+$("body").data("grade")+"&term="+$("body").data("term")+"&lesson="+$("body").data("lesson");
+            location.href = "../ending_fruit/clear.html?grade="+$("body").data("grade")+"&term="+$("body").data("term")+"&lesson="+$("body").data("lesson");
         } else {
-            location.href = "../ending_cat/failed.html?grade="+$("body").data("grade")+"&term="+$("body").data("term")+"&lesson="+$("body").data("lesson");
+            location.href = "../ending_fruit/failed.html?grade="+$("body").data("grade")+"&term="+$("body").data("term")+"&lesson="+$("body").data("lesson");
         }
     });
 

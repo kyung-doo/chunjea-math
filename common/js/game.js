@@ -28,13 +28,13 @@ var targetQuiz;
         if(state == "clear") {
             quizCount++;
             if(quizCount == quizLength) {
-                location.href = "../ending_cat/clear.html?grade="+$("body").data("grade")+"&term="+$("body").data("term")+"&lesson="+$("body").data("lesson");
+                $(window).trigger("game-finish", ["clear"]);
             } else {
                 startQuiz();
             }
         } else {
             if(lifeCount == 0){
-                location.href = "../ending_cat/failed.html?grade="+$("body").data("grade")+"&term="+$("body").data("term")+"&lesson="+$("body").data("lesson");
+                $(window).trigger("game-finish", ["failed"]);
             } else {
                 startQuiz( true );
             }
