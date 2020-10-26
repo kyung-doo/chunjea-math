@@ -36,7 +36,7 @@ var targetQuiz;
             if(lifeCount == 0){
                 location.href = "../ending_cat/failed.html?grade="+$("body").data("grade")+"&term="+$("body").data("term")+"&lesson="+$("body").data("lesson");
             } else {
-                startQuiz();
+                startQuiz( true );
             }
         }
     });   
@@ -45,11 +45,12 @@ var targetQuiz;
     /*
     *   퀴즈 시작
     */
-    function startQuiz () {
+    function startQuiz ( failed ) {
         $(".quiz-con").removeClass("disable");
         targetQuiz = $(".quiz-con .quiz").eq(quizCount);
         $(".quiz-con .quiz").hide();
-        targetQuiz.fadeIn(500);
+        if(!failed) targetQuiz.fadeIn(500);
+        else        targetQuiz.show();
 
         if(targetQuiz.is(".quiz-ox")) {
             // ox 형
