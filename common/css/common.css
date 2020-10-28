@@ -6,29 +6,42 @@
     src: url( '../fonts/HU고딕360.woff' ) format('woff');
 }
 
+@font-face {
+	font-family: 'NanumGothic';
+	font-weight: 700;
+	src: url('../fonts/NanumGothicBold.woff');
+}
+
+@font-face {
+	font-family: 'NanumGothic';
+	font-weight: 800;
+	src: url('../fonts/NanumGothicExtraBold.woff');
+}
+
+
 /* 배달의민족 주아 */
-@font-face { 
+/* @font-face { 
 	font-family: 'BMJUA'; 
 	src: url('../fonts/BMJUA.woff') format('woff'); 
-}
+} */
 
 /* 배달의민족 한나는 11살 */
-@font-face { 
+/* @font-face { 
 	font-family: 'BMHANNA_11yrs'; 
 	src: url('../fonts/BMHANNA_11yrs.woff') format('woff'); 
-}
+} */
 
 /* 배스킨라빈스 B */
-@font-face { 
+/* @font-face { 
 	font-family: 'BRBA_B'; 
 	src: url('../fonts/BRBA_B.woff') format('woff'); 
-}
+} */
 
 /* 배스킨라빈스 R */
-@font-face { 
+/* @font-face { 
 	font-family: 'BRBA_R'; 
 	src: url('../fonts/BRRA_R.woff') format('woff'); 
-}
+} */
 
 
 
@@ -55,7 +68,8 @@ input[type="text"]::-ms-clear {display: none;}
 *{
 	-webkit-text-size-adjust: none;
 	-moz-text-size-adjust: none;
-	-ms-text-size-adjust: none
+	-ms-text-size-adjust: none;
+	box-sizing: border-box;
 }
 
 .button {

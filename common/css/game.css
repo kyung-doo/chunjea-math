@@ -1,1 +1,89 @@
 ﻿@charset "utf-8";
+body{
+    font-family: "NanumGothic";
+}
+
+.quiz-con .quiz-wrap .quiz{
+    height: 593px;
+    padding: 26px 20px;
+    position: relative;
+    color: #1E1E1E;
+}
+.quiz-con .quiz-wrap .quiz .quest{
+    padding-left: 16px;
+    font-weight: 800;
+    font-size: 45px;
+}
+.quiz-con .quiz-wrap .quiz .quest .quiz-num{
+    display: inline-block;
+    width: 34px;
+    height: 46px;
+    font-size: 38px;
+    color: #fff;
+    background: #F06C2C;
+    border-radius: 4px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 46px;
+}
+.quiz-con .quiz-wrap .list-con{
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 0;
+}
+.quiz-con .quiz-wrap .list-con .list{
+    position: relative;
+    display: inline-flex;
+    align-content: center;
+    width: 176px;
+    height: 83px;
+    font-size: 45px;
+    background: #EEEEEE;
+    border-radius: 14px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    margin: 0 7px;
+    /* #
+
+     */
+}
+.quiz-con .quiz-wrap .list-con .list.active{
+    background: #FFC1AF;
+}
+.quiz-con .quiz-wrap .list-con .list.active:after{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, .7);
+    border-radius: 5px;
+}
+.quiz-con .quiz-wrap .list-con.type-ox .list{
+    width: 240px;
+    height: 96px;
+}
+.quiz-con .quiz-wrap .list-con.type-ox .list span{
+    display: inline-block;
+    width: 66px;
+    height: 73px;
+    text-indent: -9999em;
+    overflow: hidden;
+    background: url('../images/ico_o.png') no-repeat center;
+}
+.quiz-con .quiz-wrap .list-con.type-ox .list:nth-child(2).active{
+    background: #B8E9FF;
+}
+.quiz-con .quiz-wrap .list-con.type-ox .list:nth-child(2) span{
+    background: url('../images/ico_x.png') no-repeat center;
+}
+/* .quiz-con .quiz-wrap .list-con .list span{
+    display: inline-flex;
+    align-content: center;
+} */
