@@ -93,6 +93,10 @@ body{
     font-weight: 700;
     align-items: center;
     justify-content: center;
+    padding: 12px;
+}
+.quiz-con .quiz-wrap .quiz-example-wrap.al_l{
+    justify-content: left;
 }
 /* .quiz-con .quiz-wrap .list-con .list span{
     display: inline-flex;
