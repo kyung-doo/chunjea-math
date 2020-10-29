@@ -10,9 +10,11 @@ body{
     color: #1E1E1E;
 }
 .quiz-con .quiz-wrap .quiz .quest{
-    padding-left: 16px;
+    position: relative;
+    padding-left: 44px;
     font-weight: 800;
     font-size: 45px;
+    margin-left: 16px;
 }
 .quiz-con .quiz-wrap .quiz .quest .quiz-num{
     display: inline-block;
@@ -25,6 +27,9 @@ body{
     vertical-align: middle;
     text-align: center;
     line-height: 46px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .quiz-con .quiz-wrap .list-con{
     position: absolute;
@@ -95,8 +100,15 @@ body{
     justify-content: center;
     padding: 12px;
 }
+.quiz-con .quiz-wrap .multiline .quiz-example-wrap{
+    height: 230px;
+}
 .quiz-con .quiz-wrap .quiz-example-wrap.al_l{
     justify-content: left;
+}
+.quiz-con .quiz-wrap .quiz-example-wrap .number-hor-al span{
+    display: inline-block;
+    margin: 0 25px;
 }
 /* .quiz-con .quiz-wrap .list-con .list span{
     display: inline-flex;
