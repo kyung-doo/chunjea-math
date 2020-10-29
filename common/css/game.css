@@ -37,7 +37,6 @@ body{
 .quiz-con .quiz-wrap .list-con .list{
     position: relative;
     display: inline-flex;
-    align-content: center;
     width: 176px;
     height: 83px;
     font-size: 45px;
@@ -82,6 +81,18 @@ body{
 }
 .quiz-con .quiz-wrap .list-con.type-ox .list:nth-child(2) span{
     background: url('../images/ico_x.png') no-repeat center;
+}
+.quiz-con .quiz-wrap .quiz-example-wrap{
+    height: 290px;
+    border:5px solid #BBDECB;
+    margin-top: 30px;
+    font-size: 45px;
+    color: #1e1e1e;
+    display: flex;
+    border-radius: 14px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
 }
 /* .quiz-con .quiz-wrap .list-con .list span{
     display: inline-flex;
