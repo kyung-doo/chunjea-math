@@ -193,5 +193,12 @@ body {
 	background-position-y: -88px;
 }
 
-
+/* quiz-ox */
+.quiz-ox .list {
+    cursor: pointer;
+}
+/* quiz-input */
+.quiz-input .enter-btn {
+    cursor: pointer;
+}
 

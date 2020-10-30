@@ -9,12 +9,54 @@ body{
     position: relative;
     color: #1E1E1E;
 }
+.quiz-con .example-write-box{
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    border-radius: 10px;
+    border:3px solid #dbdbdb;
+    vertical-align: top;
+    background: #fff;
+    margin: 0 4px;
+}
+.quiz-con .example-circle-box{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 0 4px;
+    border-radius: 50%;
+    vertical-align: top;
+    position: relative;
+    top: -4px;
+    background: #EEEEEE;
+}
+.quiz-con .ico_o{
+    display: inline-block;
+    width: 46px;
+    height: 52px;
+    text-indent: -9999em;
+    overflow: hidden;
+    background: url('../images/ico_o.png') no-repeat center top;
+    background-size: 46px;
+    vertical-align: top;
+}
+.quiz-con .ico_x{
+    display: inline-block;
+    width: 46px;
+    height: 52px;
+    text-indent: -9999em;
+    overflow: hidden;
+    background: url('../images/ico_x.png') no-repeat center top;
+    background-size: 46px;
+    vertical-align: top;
+}
 .quiz-con .quiz-wrap .quiz .quest{
     position: relative;
     padding-left: 44px;
     font-weight: 800;
     font-size: 45px;
     margin-left: 16px;
+    letter-spacing: -1px;
 }
 .quiz-con .quiz-wrap .quiz .quest .quiz-num{
     display: inline-block;
@@ -39,6 +81,9 @@ body{
     text-align: center;
     font-size: 0;
 }
+.quiz-con .quiz-wrap .list-con.type2{
+    bottom: 30px;
+}
 .quiz-con .quiz-wrap .list-con .list{
     position: relative;
     display: inline-flex;
@@ -51,9 +96,14 @@ body{
     align-items: center;
     justify-content: center;
     margin: 0 7px;
-    /* #
-
-     */
+    vertical-align: top;
+    line-height: 100%;
+}
+.quiz-con .quiz-wrap .list-con .list.multiline{
+    font-size: 33px;
+}
+.quiz-con .quiz-wrap .list-con.len3 .list{
+    width: 216px;
 }
 .quiz-con .quiz-wrap .list-con .list.active{
     background: #FFC1AF;
@@ -110,7 +160,3 @@ body{
     display: inline-block;
     margin: 0 25px;
 }
-/* .quiz-con .quiz-wrap .list-con .list span{
-    display: inline-flex;
-    align-content: center;
-} */

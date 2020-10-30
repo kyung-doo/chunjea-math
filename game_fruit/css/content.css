@@ -10,6 +10,10 @@
 .quiz-ox .list {
     cursor: pointer;
 }
+/* quiz-input */
+.quiz-input .enter-btn {
+    cursor: pointer;
+}
 .quiz-ox .list.active {
     color: #f00;
 }
@@ -23,7 +27,3 @@
     color: #f00;
 }
 
-/* quiz-input */
-.quiz-input .enter-btn {
-    cursor: pointer;
-}
