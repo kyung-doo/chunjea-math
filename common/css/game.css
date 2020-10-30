@@ -30,6 +30,17 @@ body{
     top: -4px;
     background: #EEEEEE;
 }
+.quiz-con .num_circle{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-weight: 800;
+    font-size: 34px;
+    color: #fff;
+    background: #3B71AA;
+    text-align: center;
+    line-height: 45px;
+}
 .quiz-con .ico_o{
     display: inline-block;
     width: 46px;
