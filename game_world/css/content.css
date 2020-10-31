@@ -1,0 +1,23 @@
+﻿@charset "utf-8";
+
+
+#game-content {
+    background: url('../images/bg.jpg') no-repeat;
+}
+
+.graph{
+    display: inline-block;
+    width: 496px;
+}
+.game_3_2_6_hard .quiz-con .quiz-wrap .quiz:nth-child(1) .list{
+    font-size: 35px;
+    letter-spacing: -1px;
+}
+.game_3_2_6_hard .quiz-con .quiz-wrap .quiz:nth-child(2) .list{
+    font-size: 40px;
+    letter-spacing: -1px;
+}
+.game_3_2_6_hard .quiz-con .quiz-wrap .quiz-example-wrap.type4{
+    height: 340px;
+    margin-top: 0;
+}

@@ -126,7 +126,7 @@ body {
     z-index: 9;
 }
 
-#game-content  .home-btn {
+#game-content .home-btn {
     position: absolute;
     left: 27px;
     top: 13px;
@@ -136,7 +136,7 @@ body {
 	cursor: pointer;
 }
 
-#game-content  .life-con {
+#game-content .life-con {
     position: absolute;
     left: 1030px;
     top: 24px;
@@ -144,29 +144,30 @@ body {
     height: 62px;
 	background: url('../images/life_bg.png') no-repeat;
 }
-#game-content  .life-con .life {
+#game-content .life-con .life {
 	position: absolute;
 	top: 7px;
 	width: 52px;
 	height: 45px;
 	background: url('../images/life.png') no-repeat;
 	transition: all 0.6s cubic-bezier(0.36, 0, 0.66, -0.56);
+	will-change: transform;
 }
-#game-content  .life-con .life:nth-child(1) {
+#game-content .life-con .life:nth-child(1) {
 	left: 6px;
 }
-#game-content  .life-con .life:nth-child(2) {
+#game-content .life-con .life:nth-child(2) {
 	left: 71px;
 }
-#game-content  .life-con .life:nth-child(3) {
+#game-content .life-con .life:nth-child(3) {
 	left: 136px;
 }
-#game-content  .life-con .life.off {
+#game-content .life-con .life.off {
 	opacity: 0;
 	transform: scale(0.2);
 }
 
-#game-content  .ending-frame {
+#game-content .ending-frame {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -177,7 +178,7 @@ body {
 	z-index: 1;
 }
 
-#game-content  .restart-btn {
+#game-content .restart-btn {
     position: absolute;
     left: 536px;
     top: 624px;
@@ -188,8 +189,8 @@ body {
     z-index: 2;
     will-change: transform;
 }
-#game-content  .restart-btn:hover,
-#game-content  .restart-btn.down {
+#game-content .restart-btn:hover,
+#game-content .restart-btn.down {
 	background-position-y: -88px;
 }
 
