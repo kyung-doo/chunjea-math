@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+		<!-- 공통 css -->
+		<link type="text/css" rel="stylesheet" href="../common/css/common.css"></link>
+		<link type="text/css" rel="stylesheet" href="../common/css/game.css"></link>
+
+		<!-- 개별 css -->
+		<link type="text/css" rel="stylesheet" href="./css/content.css"></link>
+
+		<!-- 공통 js -->
+		<script type="text/javascript" src="../common/js/createjs.min.js"></script>
+		<script type="text/javascript" src="../common/js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="../common/js/jquery.counterup.min.js"></script>
+        <script type="text/javascript" src="../common/js/gsap.min.js"></script>
+        <script type="text/javascript" src="../common/js/common.js"></script>
+		<script type="text/javascript" src="../common/js/game.js"></script>
+		<script type="text/javascript" src="../common/js/animate.init.js"></script>
+
+		<!-- 개별 js -->
+		<script type="text/javascript" src="./animatecc/animate.js"></script>
+		<script type="text/javascript" src="./js/content.js"></script>
+	</head>
+
+
+	<!-- 
+		data-grade=학년
+		data-term=학기
+		data-lesson=단원
+	 -->
+	<body onselectstart="return false" ondragstart="return false" data-grade="4" data-term="1" data-lesson="2">
+		<!-- wrap -->
+		<div id="wrap">
+			<!-- container -->
+			<div id="container">
+				<!-- game-content -->
+				<div id="game-content" class="game_3_1_3_easy">
+
+
+					<!-- animation_container -->
+					<div id="animation_container" style="background-color:transparent; width:1280px; height:720px">
+						<canvas id="canvas" width="1280" height="720" style="position: absolute; display: block; background-color:transparent;"></canvas>
+						<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1280px; height:720px; position: absolute; left: 0px; top: 0px; display: block;">
+						</div>
+					</div>
+					<!-- //animation_container -->
+					
+
+					<!-- quiz-con -->
+					<div class="quiz-con">
+						<div class="quiz-wrap">
+
+							<!-- quiz ox -->
+							<div class="quiz quiz-ox hidden" data-answer="o">
+								<div class="quest"> 
+									<span class="quiz-num">1</span>설명이 맞으면<span class="ico_o">o</span>, 틀리면 <span class="ico_x">x</span> 를 고르세요.
+								</div>
+								<div class="quiz-example-wrap al_l">
+									<div class="inset">
+										<p class="example">72÷8=9에서 나누어지는 수는 72, 나누는 수는 8, 몫은 9입니다.</p>
+									</div>	
+								</div>
+								<div class="list-con type-ox">
+									<div class="list">
+										<span>O</span>
+									</div>
+									<div class="list">
+										<span>x</span>
+									</div>
+								</div>
+							</div>
+							<!-- //quiz ox -->
+
+							<!-- quiz ox -->
+							<div class="quiz quiz-ox hidden" data-answer="x">
+								<div class="quest"> 
+									<span class="quiz-num">2</span>설명이 맞으면<span class="ico_o">o</span>, 틀리면 <span class="ico_x">x</span> 를 고르세요.
+								</div>
+								<div class="quiz-example-wrap al_l">
+									<div class="inset">
+										<p class="example">48÷6=8에서 6은 48을 8로 나눈 몫입니다.</p>
+									</div>	
+								</div>
+								<div class="list-con type-ox">
+									<div class="list">
+										<span>O</span>
+									</div>
+									<div class="list">
+										<span>x</span>
+									</div>
+								</div>
+							</div>
+							<!-- //quiz ox -->
+
+							<!-- quiz ox -->
+							<div class="quiz quiz-ox hidden" data-answer="o">
+								<div class="quest"> 
+									<span class="quiz-num">3</span>계산이 맞으면<span class="ico_o">o</span>, 틀리면 <span class="ico_x">x</span> 를 고르세요.
+								</div>
+								<div class="quiz-example-wrap">
+									<div class="inset">
+										<p class="example">72÷8=9</p>
+									</div>	
+								</div>
+								<div class="list-con type-ox">
+									<div class="list">
+										<span>O</span>
+									</div>
+									<div class="list">
+										<span>x</span>
+									</div>
+								</div>
+							</div>
+							<!-- //quiz ox -->
+							
+
+						</div>
+					</div>
+					<!-- //quiz-con -->
+					
+
+					<!-- home-btn -->
+					<div class="home-btn"></div>
+					<!-- //home-btn -->
+
+					<!-- life-con -->
+					<div class="life-con">
+						<div class="life"></div>
+						<div class="life"></div>
+						<div class="life"></div>
+					</div>
+					<!-- //life-con -->
+
+				</div>
+				<!-- //game-content -->
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //wrap -->
+	</body>
+</html>
