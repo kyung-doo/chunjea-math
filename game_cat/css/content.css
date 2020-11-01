@@ -13,7 +13,8 @@
     font-size: 35px;
     letter-spacing: -1px;
 }
-.game_3_2_6_hard .quiz-con .quiz-wrap .quiz:nth-child(2) .list{
+.game_3_2_6_hard .quiz-con .quiz-wrap .quiz:nth-child(2) .list,
+.game_3_2_6_hard .quiz-con .quiz-wrap .quiz:nth-child(3) .list{
     font-size: 40px;
     letter-spacing: -1px;
 }

@@ -201,6 +201,9 @@ body{
     justify-content: center;
     padding: 12px;
 }
+.quiz-con .quiz-wrap .quiz-example-wrap .example-circle-box{
+    vertical-align: middle;
+}
 .quiz-con .quiz-wrap .multiline .quiz-example-wrap,
 .quiz-con .quiz-wrap .quiz-example-wrap.type2{
     height: 230px;
