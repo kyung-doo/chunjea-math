@@ -12,7 +12,7 @@ var targetQuiz;
         startQuiz();
 
         $(".home-btn").on(click, function () {
-            parent.window.goHome();
+            if(parent.window.hasOwnProperty("goHome")) parent.window.goHome();
             //alert("홈 이동 학년 : "+$("body").data("grade")+", 학기 : "+$("body").data("term")+", 단원 : "+$("body").data("lesson"));
         });
 

@@ -19,7 +19,7 @@
 
         $(".restart-btn").on(click, function () {
             //alert("홈 이동 학년 : "+$.getUrlVar("grade")+", 학기 : "+$.getUrlVar("term")+", 단원 : "+$.getUrlVar("lesson"));
-            parent.window.goHome();
+            if(parent.window.hasOwnProperty("goHome")) parent.window.goHome();
         });
     });
 
