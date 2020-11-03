@@ -156,6 +156,10 @@ body{
 .quiz-con .quiz-wrap .list-con.len3 .list{
     width: 216px;
 }
+.quiz-con .quiz-wrap .list-con.len3-2 .list{
+    width: 256px;
+    font-size: 37px;
+}
 .quiz-con .quiz-wrap .list-con .list.active{
     background: #FFC1AF;
 }
@@ -174,6 +178,12 @@ body{
     width: 240px;
     height: 96px;
 }
+.quiz-con .quiz-wrap .list-con.type-img{
+    bottom: 7px;
+}
+.quiz-con .quiz-wrap .list-con.type-img .list{
+    height: 175px;
+}
 .quiz-con .quiz-wrap .list-con.type-ox .list span{
     display: inline-block;
     width: 66px;
@@ -187,6 +197,12 @@ body{
 }
 .quiz-con .quiz-wrap .list-con.type-ox .list:nth-child(2) span{
     background: url('../images/ico_x.png') no-repeat center;
+}
+.quiz-con .quiz-wrap .list-con.type-ox.text .list span{
+    background-image: none;
+    width: auto;
+    height: auto;
+    text-indent: 0%;
 }
 .quiz-con .quiz-wrap .quiz-example-wrap{
     height: 290px;

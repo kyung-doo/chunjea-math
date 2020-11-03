@@ -4,3 +4,23 @@
 #game-content {
     background: url('../images/bg.jpg') no-repeat;
 }
+
+.game_4_1_1_hard .quiz-con .quiz-wrap .quiz:nth-child(2) .list-con,
+.game_4_1_1_hard .quiz-con .quiz-wrap .quiz:nth-child(3) .list-con{
+    bottom: 0;
+}
+.game_4_1_1_hard .quiz-con .quiz-wrap .quiz:nth-child(2) .list,
+.game_4_1_1_hard .quiz-con .quiz-wrap .quiz:nth-child(3) .list{
+    font-size: 40px;
+    width: 316px;
+    margin-top:3px;
+    margin-bottom: 3px;
+}
+
+
+.game_4_1_4_easy .quiz-con .quiz-wrap .quiz:nth-child(3) .quiz-example-wrap{
+    height: 355px;
+}
+.game_4_1_4_easy .quiz-con .quiz-wrap .quiz:nth-child(3) .list-con{
+    bottom: 4px;
+}
