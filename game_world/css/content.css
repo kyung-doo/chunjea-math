@@ -42,3 +42,7 @@
 .game_4_2_6_normal .quiz-con .quiz-wrap .quiz:nth-child(1) .list-con .list{
     font-size: 40px;
 }
+
+.game_4_2_6_hard .quiz-con .quiz-wrap .quiz:nth-child(2) .list-con .list{
+    font-size: 40px;
+}

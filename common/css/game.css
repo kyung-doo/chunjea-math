@@ -1,4 +1,7 @@
 ﻿@charset "utf-8";
+.mt0{
+    margin-top: 0 !important;
+}
 body{
     font-family: "NanumGothic";
 }
@@ -273,6 +276,9 @@ body{
 .quiz-con .quiz-wrap .quiz-example-wrap.type4{
     height: 325px;
     margin-top: 10px;
+}
+.quiz-con .quiz-wrap .quiz-example-wrap.type5{
+    height: 355px;
 }
 .quiz-con .quiz-wrap .quiz-example-wrap .img-txt{
     display: flex;

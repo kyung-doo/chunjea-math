@@ -4,3 +4,42 @@
 #game-content {
     background: url('../images/bg.jpg') no-repeat;
 }
+
+
+/* .game_4_1_2_normal .quiz-con .quiz-wrap .quiz:nth-child(2) .quiz-example-wrap{
+    height: 345px;
+}
+
+.game_4_2_1_easy .quiz-con .quiz-wrap .quiz:nth-child(3) .list-con .list{
+    height: 123px;
+}
+
+.game_4_2_1_hard .quiz-con .quiz-wrap .quiz:nth-child(1) .quiz-example-wrap,
+.game_4_2_1_hard .quiz-con .quiz-wrap .quiz:nth-child(2) .quiz-example-wrap{
+    height: 270px;
+} */
+
+.game_4_1_6_normal .quiz-con .quiz-wrap .quiz:nth-child(3) .list-con .list{
+    width: 256px;
+    font-size: 37px;
+}
+
+.game_4_2_2_normal .quiz-con .quiz-wrap .quiz:nth-child(2) .list-con .list{
+    width: 256px;
+    font-size: 40px;
+}
+.game_4_2_2_normal .quiz-con .quiz-wrap .quiz:nth-child(3) .list-con .list{
+    width: 216px;
+    height: 183px;
+}
+
+.game_4_2_2_hard .quiz-con .quiz-wrap .quiz:nth-child(3) .list-con .list{
+    font-size: 30px;
+}
+
+.game_4_2_5_hard .quiz-con .quiz-wrap .quiz:nth-child(2) .list-con .list{
+    font-size: 40px;
+}
+
+
+
