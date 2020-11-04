@@ -24,3 +24,21 @@
 .game_4_1_4_easy .quiz-con .quiz-wrap .quiz:nth-child(3) .list-con{
     bottom: 4px;
 }
+
+.game_4_1_4_hard .quiz-con .quiz-wrap .quiz:nth-child(2)  .quiz-example-wrap{
+    height:325px;
+    border-color: #d3c8e3;
+}
+.game_4_1_4_hard .quiz-con .quiz-wrap .quiz:nth-child(2)  .quiz-example-wrap .label{
+    position:absolute;
+    top:-22px;
+    left:12px;
+}
+
+.game_4_1_4_hard .quiz-con .quiz-wrap .quiz:nth-child(1)  .quiz-example-wrap{
+    height:270px;
+}
+
+.game_4_2_6_normal .quiz-con .quiz-wrap .quiz:nth-child(1) .list-con .list{
+    font-size: 40px;
+}

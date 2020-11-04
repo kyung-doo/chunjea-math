@@ -80,7 +80,7 @@ var targetQuiz;
 
         } else if(targetQuiz.is(".quiz-input")) {
             // 입력 형
-            var answer = targetQuiz.data("answer").split("|");
+            var answer = new String(targetQuiz.data("answer")).split("|");  // 숫자 입력값 오류 수정 
             targetQuiz.find("input[type='text']").focus();
             targetQuiz.find(".enter-btn").off(click).on(click, function ( e ) {
                 $(".quiz-con").addClass("disable");

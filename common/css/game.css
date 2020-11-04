@@ -127,12 +127,52 @@ body{
     text-align: center;
     font-size: 0;
 }
+.quiz-con .quiz-wrap .input-inset{
+    padding-left: 210px;
+}
+.quiz-con .quiz-wrap .input-inset input[type="text"]{
+    width: 176px;
+    height: 83px;
+    background: #fff;
+    border:3px solid #dbdbdb;
+    border-radius: 16px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 83px;
+    font-size: 45px;
+    color: #1E1E1E;
+    font-weight: 700;
+    
+}
+.quiz-con .quiz-wrap .input-inset .txt{
+    display: inline-block;
+    height: 83px;
+    font-size: 45px;
+    font-weight: 700;
+    vertical-align: middle;
+    line-height: 83px;
+    padding: 0 20px 0 10px;
+}
+.quiz-con .quiz-wrap .input-inset .enter-btn{
+    display: inline-block;
+    width: 151px;
+    height: 64px;
+    background: url('../images/btn.png') no-repeat left top;
+    overflow: hidden;
+    text-indent: -99999em;
+    vertical-align: middle;
+}
+.quiz-con .quiz-wrap .input-inset .enter-btn:hover{
+    background-position: left bottom;
+}
 .quiz-con .quiz-wrap .list-con.type2{
     bottom: 30px;
 }
 .quiz-con .quiz-wrap .list-con.type3{
     bottom: 10px;
-
+}
+.quiz-con .quiz-wrap .list-con.type4{
+    bottom: 20px;
 }
 .quiz-con .quiz-wrap .list-con .list{
     position: relative;
@@ -207,7 +247,7 @@ body{
 .quiz-con .quiz-wrap .quiz-example-wrap{
     height: 290px;
     border:5px solid #BBDECB;
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 45px;
     color: #1e1e1e;
     display: flex;
@@ -216,8 +256,10 @@ body{
     align-items: center;
     justify-content: center;
     padding: 12px;
+    position: relative;
 }
-.quiz-con .quiz-wrap .quiz-example-wrap .example-circle-box{
+.quiz-con .quiz-wrap .quiz-example-wrap .example-circle-box,
+.quiz-con .quiz-wrap .quiz-example-wrap .example-write-box{
     vertical-align: middle;
 }
 .quiz-con .quiz-wrap .multiline .quiz-example-wrap,
