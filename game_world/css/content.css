@@ -46,3 +46,15 @@
 .game_4_2_6_hard .quiz-con .quiz-wrap .quiz:nth-child(2) .list-con .list{
     font-size: 40px;
 }
+
+.text-symbol{
+    display: inline-block;
+    position: relative;
+    padding-right: 16px;
+}
+.text-symbol i{
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 100%;
+}
