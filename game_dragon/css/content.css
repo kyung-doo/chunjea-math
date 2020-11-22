@@ -15,11 +15,12 @@
 }
 
 .game_3_1_3_hard .quiz-con .quiz-wrap .quiz:nth-child(2) .list{
-    font-size: 38px;
+    font-size: 30px;
+    width: 195px;
 }
-.game_3_1_3_hard .quiz-con .quiz-wrap .quiz:nth-child(2) .list.multiline{
-    font-size: 33px;
-}
+/* .game_3_1_3_hard .quiz-con .quiz-wrap .quiz:nth-child(2) .list.multiline{
+    font-size: 30px;
+} */
 
 .game_3_2_5_normal .quiz-con .quiz-wrap .quiz:nth-child(3) .list{
     font-size: 33px;

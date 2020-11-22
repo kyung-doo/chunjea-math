@@ -67,16 +67,31 @@ var targetQuiz;
             });
         } else if(targetQuiz.is(".quiz-choice")) {
             // 선택 형
-            var answer = targetQuiz.data("answer");
+            // var answer = targetQuiz.data("answer");
+            // console.log(answer)
+            // targetQuiz.find(".list-con .list").off(click).on(click, function ( e ) {
+            //     $(".quiz-con").addClass("disable");
+            //     if(answer == $(this).index()+1) {
+            //         $(this).addClass("active");
+            //         correctQuiz();
+            //     } else {
+            //         wrongQuiz();
+            //     }
+            // });
+
+            var answerArr = (new String(targetQuiz.data("answer")).indexOf('|') !== -1) ? targetQuiz.data("answer").split("|") : [targetQuiz.data("answer")];
+            var answer = answerArr.map(Number);
             targetQuiz.find(".list-con .list").off(click).on(click, function ( e ) {
                 $(".quiz-con").addClass("disable");
-                if(answer == $(this).index()+1) {
+                if(answer.indexOf($(this).index()+1)!== -1 ) {
                     $(this).addClass("active");
                     correctQuiz();
                 } else {
                     wrongQuiz();
                 }
             });
+
+
 
         } else if(targetQuiz.is(".quiz-input")) {
             // 입력 형

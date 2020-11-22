@@ -5,6 +5,9 @@
     background: url('../images/bg.jpg') no-repeat;
 }
 
+.game_3_1_2_normal .quiz-con .quiz-wrap .quiz:nth-child(1) .list{
+    font-size: 40px;
+}
 .game_3_1_5_hard .quiz-con .quiz-wrap .quiz:nth-child(3) .list{
     font-size: 40px;
     letter-spacing: -1px;
