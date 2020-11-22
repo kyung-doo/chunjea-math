@@ -180,10 +180,10 @@ body {
 
 #game-content .restart-btn {
     position: absolute;
-    left: 536px;
+    left: 664px;
     top: 624px;
-    width: 218px;
-    height: 88px;
+    width: 189px;
+    height: 73px;
     background: url('../images/restart_btn.png') no-repeat;
     cursor: pointer;
     z-index: 2;
@@ -191,7 +191,23 @@ body {
 }
 #game-content .restart-btn:hover,
 #game-content .restart-btn.down {
-	background-position-y: -88px;
+	background-position-y: -73px;
+}
+
+#game-content .ending-home-btn {
+    position: absolute;
+    left: 434px;
+    top: 624px;
+    width: 213px;
+    height: 73px;
+    background: url('../images/ending_home_btn.png') no-repeat;
+    cursor: pointer;
+    z-index: 2;
+    will-change: transform;
+}
+#game-content .ending-home-btn:hover,
+#game-content .ending-home-btn.down {
+	background-position-y: -73px;
 }
 
 /* quiz-ox */
