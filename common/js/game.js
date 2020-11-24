@@ -56,7 +56,6 @@ var targetQuiz;
         if(targetQuiz.is(".quiz-ox")) {
             // ox 형
             var answer = targetQuiz.data("answer");
-            console.log(answer);
             targetQuiz.find(".list-con .list").off(click).on(click, function ( e ) {
                 $(".quiz-con").addClass("disable");
                 if(($(this).index() == 0 && answer == "o") || $(this).index() == 1 && answer == "x") {
@@ -82,7 +81,6 @@ var targetQuiz;
 
             var answerArr = (new String(targetQuiz.data("answer")).indexOf('|') !== -1) ? targetQuiz.data("answer").split("|") : [targetQuiz.data("answer")];
             var answer = answerArr.map(Number);
-            console.log(answer);
             targetQuiz.find(".list-con .list").off(click).on(click, function ( e ) {
                 $(".quiz-con").addClass("disable");
                 if(answer.indexOf($(this).index()+1)!== -1 ) {
